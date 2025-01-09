@@ -1,234 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="./style.css" />
-    <script src="./app.js"></script>
-    <script
-      src="https://kit.fontawesome.com/0c090efb7f.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <div id="header">
-      <div class="container">
-        <nav>
-          <h3><span>P</span>avan</h3>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
-        <div class="header-text">
-          <p>MERN Stack Developer</p>
-          <h1>Hi,I Am <span>Pavan</span></h1>
-        </div>
-      </div>
-    </div>
-    <!-- ABOUT -->
-    <div id="about">
-      <div class="container">
-        <div class="row">
-          <div class="about-col-1">
-            <img src="./images/backiee-301721-landscape.jpg" alt="" />
-          </div>
-          <div class="about-col-2">
-            <h1 class="sub-title">About Me</h1>
-            <p>
-              Enthusiastic and motivated MERN Stack Developer with a
-              comprehensive development course completed, offering a solid
-              foundation in web development. Skilled in building and deploying
-              full-stack web applications using MongoDB, Express.js, React, and
-              Node.js. Known for a keen eye for detail, problem-solving
-              abilities, and a collaborative spirit. Eager to bring fresh
-              perspectives and technical expertise to a dynamic development team
-              to drive innovation and deliver high-quality solutions.
-            </p>
-            <div class="tab-titles">
-              <p class="tab-links active-link" onclick="opentab('skills')">
-                Skills
-              </p>
-              <p class="tab-links" onclick="opentab('experience')">
-                Experience
-              </p>
-              <p class="tab-links" onclick="opentab('education')">Education</p>
-            </div>
-            <div class="tab-contents active-tab" id="skills">
-              <ul>
-                <li><span>Web Development</span><br />HTML, CSS, JavaScript</li>
-                <li><span>Frontend Tools </span><br />React.js</li>
-                <li><span>Backend Tools </span><br />Node.js, Express.js</li>
-                <li><span>Database </span><br />MongoDB</li>
-              </ul>
-            </div>
-            <div class="tab-contents" id="experience">
-              <ul>
-                <li>
-                  <span
-                    >Software Engineer at SmartFoodSafe.pvt.ltd
-                    (Internship)</span
-                  >
-                </li>
-                <li>Fixed bugs to make the software work better.</li>
-                <li>
-                  Implemented a drag-and-drop component to improve user
-                  interaction.
-                </li>
-                <li>
-                  Utilized Material UI to ensure optimal responsiveness and user
-                  experience across various devices.
-                </li>
-                <li>
-                  Utilized useFieldArray to manage user input and perform CRUD
-                  operations efficiently.
-                </li>
-                <li>Translated the website into three different languages.</li>
-              </ul>
-            </div>
-            <div class="tab-contents" id="education">
-              <ul>
-                <li>
-                  <span>KLS Gogte Institute of Technology, Belagavi</span
-                  ><br />Mechanical Engineering <br />
-                  CGPA - 8.02
-                </li>
-                <li>
-                  <span>CLE'S PU COllege, Chikodi </span><br />PCMB
-                  <br />Percentage - 81.16
-                </li>
-                <li>
-                  <span>CLE'S MKK High School, Chikodi </span><br />CBSC State
-                  Board<br />Percentage - 86.24
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <!-- Services -->
-    <div id="services">
-      <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
-          <div>
-            <i class="fa-solid fa-code"></i>
-            <h2>Web development</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-              officiis ad expedita mollitia quisquam nesciunt cumque architecto
-              unde eum illo voluptatibus doloribus neque reiciendis, provident
-              totam est adipisci, delectus harum.
-            </p>
-            <a href="#">Learn More</a>
-          </div>
-          <div>
-            <i class="fa-solid fa-crop"></i>
-            <h2>Front end</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-              officiis ad expedita mollitia quisquam nesciunt cumque architecto
-              unde eum illo voluptatibus doloribus neque reiciendis, provident
-              totam est adipisci, delectus harum.
-            </p>
-            <a href="#">Learn More</a>
-          </div>
-          <div>
-            <i class="fa-solid fa-crop"></i>
-            <h2>Front end</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-              officiis ad expedita mollitia quisquam nesciunt cumque architecto
-              unde eum illo voluptatibus doloribus neque reiciendis, provident
-              totam est adipisci, delectus harum.
-            </p>
-            <a href="#">Learn More</a>
-          </div>
-        </div>
-      </div>
-    </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="./style.css" />
+  <script src="./app.js"></script>
+  <script src="https://kit.fontawesome.com/0c090efb7f.js" crossorigin="anonymous"></script>
+</head>
 
-    <!-- portfolio -->
-    <div id="portfolio">
-      <div class="container">
-        <h1 class="sub-title">My Work</h1>
-        <div class="work-list">
-          <div class="work">
-            <img src="./images/backiee-301721-landscape.jpg" alt="" />
-            <div class="layer">
-              <h3>Social Media app</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
-                repellendus iusto atque exercitationem laudantium amet numquam
-                nam magnam voluptates inventore? Laudantium excepturi expedita
-                optio at assumenda vel facere repudiandae necessitatibus.
-              </p>
-              <a href=""><i class="fa-solid fa-link"></i></a>
-            </div>
-          </div>
-          <div class="work">
-            <img src="./images/Life stages Wallpaper 10314.jpg" alt="" />
-            <div class="layer">
-              <h3>Ecommerse</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
-                repellendus iusto atque exercitationem laudantium amet numquam
-                nam magnam voluptates inventore? Laudantium excepturi expedita
-                optio at assumenda vel facere repudiandae necessitatibus.
-              </p>
-              <a href=""><i class="fa-solid fa-link"></i></a>
-            </div>
-          </div>
-          <div class="work">
-            <img src="./images/pexels-miguel-á-padriñán-3785927.jpg" alt="" />
-            <div class="layer">
-              <h3>Movie list</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
-                repellendus iusto atque exercitationem laudantium amet numquam
-                nam magnam voluptates inventore? Laudantium excepturi expedita
-                optio at assumenda vel facere repudiandae necessitatibus.
-              </p>
-              <a href=""><i class="fa-solid fa-link"></i></a>
-            </div>
-          </div>
-        </div>
-        <a href="" class="btn">See More</a>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <h3><span>P</span>avan</h3>
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-x" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>MERN Stack Developer</p>
+        <h1>Hi,I Am <span>Pavan</span></h1>
       </div>
     </div>
+  </div>
+  <!-- ABOUT -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="./images/backiee-301721-landscape.jpg" alt="" />
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>
+            Enthusiastic and motivated MERN Stack Developer with a
+            comprehensive development course completed, offering a solid
+            foundation in web development. Skilled in building and deploying
+            full-stack web applications using MongoDB, Express.js, React, and
+            Node.js. Known for a keen eye for detail, problem-solving
+            abilities, and a collaborative spirit. Eager to bring fresh
+            perspectives and technical expertise to a dynamic development team
+            to drive innovation and deliver high-quality solutions.
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">
+              Skills
+            </p>
+            <p class="tab-links" onclick="opentab('experience')">
+              Experience
+            </p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Web Development</span><br />HTML, CSS, JavaScript</li>
+              <li><span>Frontend Tools </span><br />React.js</li>
+              <li><span>Backend Tools </span><br />Node.js, Express.js</li>
+              <li><span>Database </span><br />MongoDB</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li>
+                <span>Software Engineer at SmartFoodSafe.pvt.ltd
+                  (Internship)</span>
+              </li>
+              <li>Fixed bugs to make the software work better.</li>
+              <li>
+                Implemented a drag-and-drop component to improve user
+                interaction.
+              </li>
+              <li>
+                Utilized Material UI to ensure optimal responsiveness and user
+                experience across various devices.
+              </li>
+              <li>
+                Utilized useFieldArray to manage user input and perform CRUD
+                operations efficiently.
+              </li>
+              <li>Translated the website into three different languages.</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li>
+                <span>KLS Gogte Institute of Technology, Belagavi</span><br />Mechanical Engineering <br />
+                CGPA - 8.02
+              </li>
+              <li>
+                <span>CLE'S PU COllege, Chikodi </span><br />PCMB
+                <br />Percentage - 81.16
+              </li>
+              <li>
+                <span>CLE'S MKK High School, Chikodi </span><br />CBSC State
+                Board<br />Percentage - 86.24
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <!-- Contact -->
-    <div class="contact">
-      <div class="container">
-        <div class="row">
-          <div class="contact-left">
-            <h1 class="sub-title">Contact Me</h1>
-            <p><i class="fa-solid fa-paper-plane"></i> pavannjamagoudar@gmail.com</p>
-            <p><i class="fa-solid fa-phone"></i> 8722357987</p>
-            <div class="social-icon">
-              <a href=""><i class="fa-brands fa-github"></i></a>
-              <a href=""><i class="fa-brands fa-linkedin"></i></a>
-              <a href=""><i class="fa-brands fa-instagram"></i></i></a>
-            </div>
-            <a href="./images/Pavan N J.pdf" download class="btn btn2">Download CV</a>
-          </div>
-          <div class="contact-right">
-            <form action="">
-              <input type="text" name="name" placeholder="Your Name" required>
-              <input type="email" name="email" placeholder="Your Email" required>
-              <textarea name="message" rows="6" placeholder="Your Message"></textarea>
-              <button class="btn btn2" type="submit">Submit</button>
-            </form>
-          </div>
+  <!-- Services -->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web development</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+            officiis ad expedita mollitia quisquam nesciunt cumque architecto
+            unde eum illo voluptatibus doloribus neque reiciendis, provident
+            totam est adipisci, delectus harum.
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-crop"></i>
+          <h2>Front end</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+            officiis ad expedita mollitia quisquam nesciunt cumque architecto
+            unde eum illo voluptatibus doloribus neque reiciendis, provident
+            totam est adipisci, delectus harum.
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-crop"></i>
+          <h2>Front end</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+            officiis ad expedita mollitia quisquam nesciunt cumque architecto
+            unde eum illo voluptatibus doloribus neque reiciendis, provident
+            totam est adipisci, delectus harum.
+          </p>
+          <a href="#">Learn More</a>
         </div>
       </div>
     </div>
-    
-  </body>
+  </div>
+
+  <!-- portfolio -->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="./images/backiee-301721-landscape.jpg" alt="" />
+          <div class="layer">
+            <h3>Social Media app</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
+              repellendus iusto atque exercitationem laudantium amet numquam
+              nam magnam voluptates inventore? Laudantium excepturi expedita
+              optio at assumenda vel facere repudiandae necessitatibus.
+            </p>
+            <a href=""><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="./images/Life stages Wallpaper 10314.jpg" alt="" />
+          <div class="layer">
+            <h3>Ecommerse</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
+              repellendus iusto atque exercitationem laudantium amet numquam
+              nam magnam voluptates inventore? Laudantium excepturi expedita
+              optio at assumenda vel facere repudiandae necessitatibus.
+            </p>
+            <a href=""><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="./images/pexels-miguel-á-padriñán-3785927.jpg" alt="" />
+          <div class="layer">
+            <h3>Movie list</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
+              repellendus iusto atque exercitationem laudantium amet numquam
+              nam magnam voluptates inventore? Laudantium excepturi expedita
+              optio at assumenda vel facere repudiandae necessitatibus.
+            </p>
+            <a href=""><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="" class="btn">See More</a>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <div class="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p>
+            <i class="fa-solid fa-paper-plane"></i><span id="emailID">pavannjamagoudar@gmail.com</span>
+          </p>
+          <p><i class="fa-solid fa-phone"></i> 8722357987</p>
+          <div class="social-icon">
+            <a href=""><i class="fa-brands fa-github"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+          </div>
+          <a href="./images/Pavan N J.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form action="" name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required />
+            <input type="email" name="Email" placeholder="Your Email" required />
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button class="btn btn2" type="submit">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+  var sidemenu = document.getElementById("sidemenu");
+  function openmenu() {
+    sidemenu.style.right = "0";
+  }
+  function closemenu() {
+    sidemenu.style.right = "-30%";
+  }
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxdnnIriiQEaK_JpN3l82vOzxaGJkNnqU9OG5gkOl5FKo94n9lcUmC2cfpF64eJmN14/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg=document.getElementById("msg")
+
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML="Message sent Successfully"
+        setTimeout(function(){
+          msg.innerHTML=""
+        },5000)
+        form.reset()
+      })
+      
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
 </html>
