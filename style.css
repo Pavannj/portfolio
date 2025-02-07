@@ -193,10 +193,13 @@ nav ul li a:hover::after {
 }
 .work img {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 20px;
   display: block;
   transition: transform 0.5s;
   height: 400px;
+  border: 1px solid #ff004f;
+  object-fit: contain;
+  padding: 25px;
 }
 .layer {
   width: 100%;
